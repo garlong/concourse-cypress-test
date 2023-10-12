@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/richardforjoe/concourse-cypress.git"
+    "url": "git+https://github.com/garlong/concourse-cypress-test.git"
   },
   "keywords": [
     "concourse"
@@ -26,9 +26,9 @@
   "author": "Richard Forjoe",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/richardforjoe/concourse-cypress/issues"
+    "url": "https://github.com/garlong/concourse-cypress-test/issues"
   },
-  "homepage": "https://github.com/richardforjoe/concourse-cypress#readme",
+  "homepage": "https://github.com/garlong/concourse-cypress-test#readme",
   "dependencies": {
     "cypress": "^9.2.0"
   },

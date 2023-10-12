@@ -1,4 +1,4 @@
-# concourse-cypress
+# concourse-cypress-test
 
 Guides:
 Cypress

@@ -11,7 +11,7 @@ resources:
   - name: source-code
     type: git
     source:
-      uri: https://github.com/richardforjoe/concourse-cypress
+      uri: https://github.com/garlong/concourse-cypress-test
       branch: main
 
 jobs:
