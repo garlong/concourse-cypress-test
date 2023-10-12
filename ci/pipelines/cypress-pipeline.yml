@@ -10,7 +10,7 @@ jobs:
   - name: pull-source
     plan:
       - get: source-code
-      - task: show-contents
+      - task: show-cotents
         file: source-code/ci/tasks/show-contents-task.yml
       - task: install-dependencies
         config:
