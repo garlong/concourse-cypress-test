@@ -24,7 +24,7 @@ jobs:
         config:
           platform: linux
           image_resource:
-            type: docker-image
+            type: registry-image
             source:
               repository: node
               tag: 17.2.0
@@ -43,7 +43,7 @@ jobs:
         config: 
           platform: linux
           image_resource:
-            type: docker-image
+            type: registry-image
             source: 
               repository: cypress/included
               tag: 8.3.0
