@@ -19,7 +19,7 @@ jobs:
             type: registry-image
             source:
               repository: node
-              tag: 17.2.0
+              tag: 18.18.1
           inputs:
             - name: source-code
           outputs:
