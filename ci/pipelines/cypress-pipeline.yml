@@ -38,7 +38,7 @@ jobs:
             type: registry-image
             source: 
               repository: cypress/included
-              tag: 9.2.0
+              tag: 13.3.1
           inputs:
           - name: source-code
           outputs:
@@ -49,10 +49,6 @@ jobs:
             - -exec
             - |
               cd source-code
-              npm install -g npm-check-updates
-              npx npm-check-updates -u
-              npm install -g npm
-              npm install
               node -v
               npm -v
               npm run cy:ci
