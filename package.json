@@ -4,7 +4,7 @@
   "description": "concourse-ci guide",
   "main": "index.js",
   "scripts": {
-    "cy:ci": "cross-env CYPRESS_VERIFY_TIMEOUT=100000 && cypress run --headless --spec 'cypress/integration/functional/**/*'",
+    "cy:ci": "cross-env CYPRESS_VERIFY_TIMEOUT=100000 && npm cypress install --force && npm cypress run --headless --spec 'cypress/integration/functional/**/*'",
     "cy": "cypress open",
     "cy:ci:visual": "cypress run --headless --spec 'cypress/integration/visual/**/*'",
     "reports:clean": "rm -R -f cypress/reports && mkdir cypress/reports && mkdir cypress/reports/mochareports",
