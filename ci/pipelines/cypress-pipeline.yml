@@ -38,7 +38,7 @@ jobs:
             type: registry-image
             source: 
               repository: cypress/included
-              tag: 13.13.1
+              tag: 13.0.0
           inputs:
           - name: source-code
           outputs:
