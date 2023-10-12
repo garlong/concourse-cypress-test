@@ -49,6 +49,10 @@ jobs:
             - -exec
             - |
               cd source-code
+              npm install -g npm-check-updates
+              npx npm-check-updates -u
+              npm install -g npm
+              npm install
               node -v
               npm -v
               npm run cy:ci
