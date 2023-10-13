@@ -6,6 +6,7 @@
   "scripts": {
     "installCLI": "npm install cypress --save-dev && cross-env CYPRESS_VERIFY_TIMEOUT=10000000",
     "cy:showcache": "npx cypress cache path && npx cypress cache list",
+    "cy:install" : "cypress install",
     "cy:ci": "npx cypress run --headless --spec 'cypress/integration/functional/**/*'",
     "cy": "DEBUG=cypress:* && npx cypress verify",
     "cy:ci:visual": "cypress run --headless --spec 'cypress/integration/visual/**/*'",
@@ -25,9 +26,7 @@
   "keywords": [
     "concourse"
   ],
-  "dependencies": {
-    "cypress": "^13.2.0"
-  },
+  "dependencies": {},
   "author": "Richard Forjoe",
   "license": "ISC",
   "bugs": {
@@ -41,6 +40,7 @@
     "mochawesome": "^7.0.1",
     "mochawesome-json-to-md": "^0.2.1",
     "mochawesome-merge": "^4.2.1",
-    "mochawesome-report-generator": "^6.0.1"
+    "mochawesome-report-generator": "^6.0.1",
+    "cypress": "^13.3.1"
   }
 }
