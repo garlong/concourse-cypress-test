@@ -38,7 +38,7 @@ jobs:
             type: registry-image
             source: 
               repository: cypress/included
-              tag: 13.0.0
+              tag: 13.3.1
           inputs:
           - name: source-code
           outputs:
@@ -54,15 +54,14 @@ jobs:
               npm -v
               npm install -g n
               n stable
-              
+
               node -v
               npm -v
 
               
 
               npm install cross-env
-              npx cypress info
-              npx cypress cache path
+
               npm run cy
               npm run cy:ci
 # fly -t cypress set-pipeline -c cypress-pipeline.yml -p cypress-pipeline
