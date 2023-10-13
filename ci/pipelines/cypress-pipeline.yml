@@ -38,7 +38,7 @@ jobs:
             type: registry-image
             source: 
               repository: cypress/included
-              tag: 13.2.0
+              tag: 13.3.1
           inputs:
           - name: source-code
           outputs:
@@ -57,6 +57,8 @@ jobs:
 
               npm cache clean --force
               npm cache verify
+
+              cypress cache clear
               
               npm run cy
               npm run cy:ci
