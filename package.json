@@ -4,7 +4,7 @@
   "description": "concourse-ci guide",
   "main": "index.js",
   "scripts": {
-    "installCLI": "npm install cypress --save-dev && cross-env CYPRESS_VERIFY_TIMEOUT=10000000",
+    "installCLI": "cross-env CYPRESS_VERIFY_TIMEOUT=10000000",
     "cy:showcache": "npx cypress cache path && npx cypress cache list",
     "cy:install" : "cypress install",
     "cy:ci": "npx cypress run --headless --spec 'cypress/integration/functional/**/*'",
