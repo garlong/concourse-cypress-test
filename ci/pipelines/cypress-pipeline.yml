@@ -49,11 +49,12 @@ jobs:
             - -exec
             - |
               cd source-code
-              npm install cypress
-              cypress install
               npm install cross-env
+              cypress info
+              cypress cache path
               node -v
               npm -v
+              npm run cy
               npm run cy:ci
 # fly -t cypress set-pipeline -c cypress-pipeline.yml -p cypress-pipeline
 # resources - external input and outputs of a job in a pipeline. available to all tasks
