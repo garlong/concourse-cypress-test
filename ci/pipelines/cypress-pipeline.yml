@@ -50,6 +50,7 @@ jobs:
             - |
               cd source-code
               npm install cypress
+              cypress install
               npm install cross-env
               node -v
               npm -v
