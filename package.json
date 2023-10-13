@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "cy:ci": "cypress run --headless --spec 'cypress/integration/functional/**/*'",
-    "cy": "cross-env CYPRESS_VERIFY_TIMEOUT=1000000 && npx cypress verify && cypress open",
+    "cy": "DEBUG=cypress:* && cross-env CYPRESS_VERIFY_TIMEOUT=1000000 && npx cypress verify && cypress open",
     "cy:ci:visual": "cypress run --headless --spec 'cypress/integration/visual/**/*'",
     "reports:clean": "rm -R -f cypress/reports && mkdir cypress/reports && mkdir cypress/reports/mochareports",
     "report:pretest": "npm run clean:reports",
