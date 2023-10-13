@@ -59,7 +59,8 @@ jobs:
               npm cache verify
 
               cypress cache clear
-              cypress install
+              npm uninstall -g cypress
+              npm install --save-dev cypress
               
               npm run cy
               npm run cy:ci
