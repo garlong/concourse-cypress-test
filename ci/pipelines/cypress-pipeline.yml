@@ -49,9 +49,11 @@ jobs:
             - -exec
             - |
               cd source-code
-              npm install -g npm@latest
+
               node -v
               npm -v
+
+              
 
               npm install cross-env
               npx cypress info
