@@ -50,8 +50,8 @@ jobs:
             - |
               cd source-code
               npm install cross-env
-              cypress info
-              cypress cache path
+              npx cypress info
+              npx cypress cache path
               node -v
               npm -v
               npm run cy
