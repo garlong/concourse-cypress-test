@@ -49,11 +49,7 @@ jobs:
             - -exec
             - |
               cd source-code
-              node -v
-              npm -v
-
               npm install cross-env
-
               npm run cy
               npm run cy:ci
 # fly -t cypress set-pipeline -c cypress-pipeline.yml -p cypress-pipeline
