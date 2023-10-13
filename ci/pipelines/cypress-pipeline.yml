@@ -53,12 +53,13 @@ jobs:
               npm install cross-env
 
               npm run installCLI
-              npm run cy:install
+              npm run cy:showcache
 
               npm cache clean --force
               npm cache verify
 
               cypress cache clear
+              cypress install
               
               npm run cy
               npm run cy:ci
