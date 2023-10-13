@@ -52,6 +52,11 @@ jobs:
 
               node -v
               npm -v
+              npm install -g n
+              n stable
+              
+              node -v
+              npm -v
 
               
 
