@@ -49,7 +49,7 @@ jobs:
             - -exec
             - |
               cd source-code
-              npm install
+              npm install cypress
               npm install cross-env
               node -v
               npm -v
