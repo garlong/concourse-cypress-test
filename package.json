@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "installCLI": "npm install cypress --save-dev && cross-env CYPRESS_VERIFY_TIMEOUT=10000000",
-    "cy:install": "npx cypress install && npx cypress cache path && npx cypress cache list",
+    "cy:install": "npx cypress cache path && npx cypress cache list",
     "cy:ci": "npx cypress run --headless --spec 'cypress/integration/functional/**/*'",
     "cy": "DEBUG=cypress:* && npx cypress open",
     "cy:ci:visual": "cypress run --headless --spec 'cypress/integration/visual/**/*'",
@@ -25,6 +25,9 @@
   "keywords": [
     "concourse"
   ],
+  "dependencies": {
+    "cypress": "^13.2.0"
+  },
   "author": "Richard Forjoe",
   "license": "ISC",
   "bugs": {

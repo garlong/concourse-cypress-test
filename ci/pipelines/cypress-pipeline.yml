@@ -38,7 +38,7 @@ jobs:
             type: registry-image
             source: 
               repository: cypress/included
-              tag: 13.3.1
+              tag: 13.2.0
           inputs:
           - name: source-code
           outputs:
@@ -49,10 +49,14 @@ jobs:
             - -exec
             - |
               cd source-code
-              npm install cross-env
               
+              npm install cross-env
+
               npm run installCLI
               npm run cy:install
+
+              npm cache clean --force
+              npm cache verify
               
               npm run cy
               npm run cy:ci
