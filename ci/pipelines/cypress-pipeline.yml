@@ -50,6 +50,9 @@ jobs:
             - |
               cd source-code
               npm install cross-env
+              npm run cy:install
+              npx cypress cache path
+              npx cypress cache list
               npm run cy
               npm run cy:ci
 # fly -t cypress set-pipeline -c cypress-pipeline.yml -p cypress-pipeline

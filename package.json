@@ -4,6 +4,7 @@
   "description": "concourse-ci guide",
   "main": "index.js",
   "scripts": {
+    "cy:install": "npm install cypress --save-dev",
     "cy:ci": "cypress run --headless --spec 'cypress/integration/functional/**/*'",
     "cy": "DEBUG=cypress:* && cross-env CYPRESS_VERIFY_TIMEOUT=1000000 && npx cypress verify && cypress open",
     "cy:ci:visual": "cypress run --headless --spec 'cypress/integration/visual/**/*'",
