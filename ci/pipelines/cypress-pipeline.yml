@@ -56,6 +56,8 @@ jobs:
             - |
               cd source-code
 
+              export CYPRESS_VERIFY_TIMEOUT=10000000
+
               cypress cache clear
               npm install cypress --save-dev
 
