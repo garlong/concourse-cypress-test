@@ -1,6 +1,10 @@
 const { defineConfig } = require('cypress')
 
 module.exports = defineConfig({
+    e2e: {
+        baseUrl: "https://dashboard.walktober.com",
+        supportFile: false
+    },
     env: {
         CYPRESS_VERIFY_TIMEOUT: 100000
     },
