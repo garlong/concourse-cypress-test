@@ -10,7 +10,7 @@ services:
       PGDATA: /database
 
   concourse:
-    image: rdclda/concourse:7.5.0
+    image: rdclda/concourse:7.9.1
     #image: concourse/concourse:7.10.0
     command: quickstart
     privileged: true
@@ -31,7 +31,7 @@ services:
       CONCOURSE_TSA_CLIENT_SECRET: Y29uY291cnNlLXdvcmtlcgo=
       CONCOURSE_X_FRAME_OPTIONS: allow
       CONCOURSE_CONTENT_SECURITY_POLICY: "*"
-      #CONCOURSE_CLUSTER_NAME: arm64
+      CONCOURSE_CLUSTER_NAME: arm64
       CONCOURSE_WORKER_CONTAINERD_DNS_SERVER: "8.8.8.8"
       CONCOURSE_WORKER_RUNTIME: "houdini"
       CONCOURSE_RUNTIME: "houdini"
