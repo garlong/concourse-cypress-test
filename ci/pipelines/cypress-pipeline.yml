@@ -37,8 +37,6 @@ jobs:
                 npm install cross-env
                 npm run installCLI
                 npm i
-
-                npm run cy
       - task: e2e-test
         config: 
           platform: linux
@@ -57,6 +55,7 @@ jobs:
             - -exec
             - |
               cd source-code
+              npm run cy
               npm run cy:ci
 # fly -t cypress set-pipeline -c cypress-pipeline.yml -p cypress-pipeline
 # resources - external input and outputs of a job in a pipeline. available to all tasks
