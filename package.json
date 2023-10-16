@@ -8,7 +8,7 @@
     "cy:showcache": "npx cypress cache path && npx cypress cache list",
     "cy:install" : "cypress install",
     "cy:ci": "npx cypress run --headless --spec 'cypress/integration/functional/**/*'",
-    "cy": "DEBUG=cypress:* && npx cypress verify",
+    "cy": "npx cypress verify",
     "cy:ci:visual": "cypress run --headless --spec 'cypress/integration/visual/**/*'",
     "reports:clean": "rm -R -f cypress/reports && mkdir cypress/reports && mkdir cypress/reports/mochareports",
     "report:pretest": "npm run clean:reports",
