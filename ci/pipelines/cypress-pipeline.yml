@@ -31,9 +31,8 @@ jobs:
               - |
                 cd source-code
 
-                apt-get update -y
-                apt-get install dbus libgtk2.0-0 libgtk-3-0 libgbm-dev libnotify-dev libnss3 libxss1 libasound2 libxtst6 xauth xvfb -y
-
+                apt list --installed
+                
                 npm install cross-env
                 npm run installCLI
                 npm i
@@ -54,15 +53,11 @@ jobs:
             args:
             - -exec
             - |
-              mkdir -p /var/run/dbus
-              dbus-daemon --config-file=/usr/share/dbus-1/system.conf --print-address
 
+              apt list --installed
               cd source-code
 
               export CYPRESS_VERIFY_TIMEOUT=10000000
-
-              cypress cache clear
-              npm install cypress --save-dev
 
               npm run cy
               npm run cy:ci
