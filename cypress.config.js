@@ -2,7 +2,7 @@ const { defineConfig } = require('cypress')
 
 module.exports = defineConfig({
     env: {
-        CYPRESS_VERIFY_TIMEOUT: 1000
+        CYPRESS_VERIFY_TIMEOUT: 100000
     },
     video: false,
     reporter: "cypress-multi-reporters",
