@@ -56,6 +56,9 @@ jobs:
             - |
               cd source-code
 
+              cypress cache clear
+              npm install cypress --save-dev
+
               npm run cy
               npm run cy:ci
 # fly -t cypress set-pipeline -c cypress-pipeline.yml -p cypress-pipeline
